@@ -12,32 +12,47 @@
    
 
    <!-- Faces to click on -->
-   <div class="face-container">
+    <div class="face-container">
 
-   	<div class="face" onclick="happy()">
-   		<img src="/pics/happy.png">
-   	</div>
+       	<div class="face" onclick="happy()">
 
-   	<div class="face" onclick="mad()">
-   		<img src="/pics/mad.png">
-   	</div>
+       		<img src="/pics/happy.png">
 
-   </div>
-   <br>
-   <div class="container">
+       	</div>
 
-     <h2>Click it like you feel it..</h2>    
-     <input type="text"></input>
-     <button onclick="alarm()">click away!</button>
+       	<div class="face" onclick="mad()">
 
-   </div>
-   <br>
-   <div class="container">
-     <img src="/pics/pokerFace.jpg"
-   </div>
+       		<img src="/pics/mad.png">
+
+       	</div>
+
+    </div>
+
+    <br>
+
+    <div class="container">
+
+       <h4>Get your fortune cookie mood below</h4>    
+
+       <input type="number" id="userInput"></input>
+
+       <button onclick="draw()">click away!</button>
+
+    </div>
+
+    <br>
+
+    <div class="pokerFace">
+
+      <canvas id="drawGrin">
+        
+      </canvas>
+     
+    </div>
   
 
 
-   <script type="text/javascript" src="app.js"></script>
+   <script type="text/javascript" src="/js/app.js"></script>
+   <script type="text/javascript" src="/js/canvas.js"></script>
   </body>
 </html>
