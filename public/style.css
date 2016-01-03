@@ -1,4 +1,4 @@
-.container {
+.face-container {
 	display: block;
 	width: 300px;
 	margin: auto;
@@ -10,4 +10,12 @@
 	width: 250px;
 	height: 300px;
 	display: inline;
+}
+.container {
+		display: block;
+	width: 300px;
+	margin: auto;
+	border: 3px solid #1b2afa;
+	text-align: center;
+	border-radius: 100px;
 }
