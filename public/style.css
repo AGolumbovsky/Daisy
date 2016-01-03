@@ -1,0 +1,13 @@
+.container {
+	display: block;
+	width: 300px;
+	margin: auto;
+	border: 3px solid #ffcc00;
+	text-align: center;
+	border-radius: 100px;
+}
+.face {
+	width: 250px;
+	height: 300px;
+	display: inline;
+}
