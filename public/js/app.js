@@ -1,5 +1,6 @@
 function happy() {
 	console.log("I'm happy");
+	drawTranslate(8);
 }
 
 function mad() {
