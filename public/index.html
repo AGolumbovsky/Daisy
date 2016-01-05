@@ -30,14 +30,16 @@
 
     <br>
 
-    <div class="container">
-
-       <h4>Get your fortune cookie mood below</h4>    
-
-       <input type="number" id="userInput"></input>
-
-       <button onclick="draw()">click away!</button>
-
+    <div class="face-container">  
+      <div>
+       <h5>enter your mood below</h5>
+       <input type="number" maxlength="02" id="userInput"></input>
+       <button onclick="drawTranslate()">Smile now</button>
+      </div>
+      <div>
+       <h5>See your average</h5>
+       <button onclick="drawAvg()">Smile avg</button>
+      </div>
     </div>
 
     <br>

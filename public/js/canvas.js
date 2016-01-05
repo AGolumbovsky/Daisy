@@ -1,4 +1,4 @@
-function draw() {
+/*function draw() {
 
 		var canvas = document.getElementById('drawGrin');
 		var ctx = canvas.getContext('2d');
@@ -17,6 +17,7 @@ function draw() {
 
 		//draw the grin
 			var moodRate = 75;
+			//var userInput = document.getElementById("userInput").value;
 			var userInput = document.getElementById("userInput").value;
 
 			if(!userInput) {
@@ -44,4 +45,34 @@ function draw() {
 			ctx.stroke();
 
 };
-draw();
+draw();*/
+
+var moodRate = 75;
+
+function drawTranslate(userInput) {
+
+	var canvas = document.getElementById('drawGrin');
+	var ctx = canvas.getContext('2d');
+
+	//clear the canvas before drawing
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// collect the user input
+	userInput = document.getElementById('userInput').value;
+	moodRate = userInput*15;
+
+	if(!userInput || userInput>10) alert("How hard is it to enter a valid mood?");
+	else {
+
+	// draw the smile
+	ctx.lineWidth = 8;
+	ctx.beginPath();
+	ctx.moveTo(50, 75);
+	ctx.quadraticCurveTo(150, moodRate, 250, 75);
+	ctx.stroke();
+	}
+}
+
+function drawAvg() {
+	
+}
