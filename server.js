@@ -16,8 +16,18 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 // endpoints
+
+app.get('/', function(req, res) {
+	res.send("Why you bother me with this?")
+})
+
 app.post('api/moods', function(req, res) {
 	console.log("Server got POST request");
+
+});
+
+app.delete('api/moods', function(req, res) {
+	console.log("Server got DELETE request")
 })
 
 
