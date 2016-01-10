@@ -8,7 +8,7 @@ function drawGrin(moodRate) {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	// draw the smile
-	ctx.lineWidth = 8;
+	ctx.lineWidth = 10;
 	ctx.beginPath();
 	// starting point x, y
 	ctx.moveTo(25, 75);
